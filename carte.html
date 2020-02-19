@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/output.css" type="text/css">
+    <link rel="stylesheet" href="https://stitches.hyperyolo.com/output.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" type="text/css">
+
+
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin=""></script>
+
+    <title>Greta</title>
+</head>
+<body class="antialias bg-gray-200">
+<header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2">
+    <div class="flex-1 flex justify-between items-center">
+        <a href="#">
+            <img class="rounded" src="http://fakeimg.pl/32x36/F90/fff/?text=Greta">
+        </a>
+    </div>
+
+    <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+    <input class="hidden" type="checkbox" id="menu-toggle" />
+
+    <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+        <nav>
+            <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-400" href="http://localhost/greta/">Accueil</a></li>
+                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-400" href="http://localhost/greta/carte.html">Carte</a></li>
+                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-400" href="http://localhost/greta/formations.html">Nos Formations</a></li>
+                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-400" href="http://localhost/greta/faq.html">FAQ</a></li>
+                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-400 lg:mb-0 mb-2" href="http://localhost/greta/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+<section class="bg-white   font-sans">
+        <div id="mapid"></div>
+</section>
+<footer class="font-sans bg-black text-white py-8 px-4">
+    <div class="mx-auto container overflow-hidden flex flex-col lg:flex-row justify-between">
+        <a href="/" class="block mr-4 w-1/2">
+            <img class="rounded-full" src="http://fakeimg.pl/50x50/DA5930/fff/?text=GRETA"  alt="logo">
+        </a>
+        <div class="flex text-sm mt-6 lg:mt-0">
+            <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left">
+                <li class="inline-block py-2 px-3 text-white uppercase no-underline font-medium tracking-wide">Localisation</li>
+                <li><a href="http://localhost/greta/carte.html"  target="_top" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Greta Côte d'azur</a></li>
+                <li><a href="http://localhost/greta/carte.html?aix"  target="_top" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Greta Aix</a></li>
+                <li><a href="http://localhost/greta/carte.html?marseille" target="_top" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Greta Marseille</a></li>
+                <li><a href="http://localhost/greta/carte.html?montpellier" target="_top" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Greta Montpellier</a></li>
+            </ul>
+            <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left">
+                <li class="inline-block py-2 px-3 text-white uppercase no-underline font-medium tracking-wide">Le réseau</li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Greta du ver</a></li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Greta Côte d'Azur</a></li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Greta Tourisme Hôtellerie</a></li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">GIP FIPAN</a></li>
+            </ul>
+            <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left">
+                <li class="inline-block py-2 px-3 text-white uppercase no-underline font-medium tracking-wide">Pour le particulier</li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Formations</a>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Bilan de compétences</a>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Validation des acquis de l'expérience</a>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Préparation concours</a></li>
+            </ul>
+            <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left">
+                <li class="inline-block py-2 px-3 text-white uppercase no-underline font-medium tracking-wide">Pour l'entreprise</li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Formations Management RH</a></li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Conseil RH</a></li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Bilan de compétences</a></li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Validation des acquis de l'expérience</a>
+                </li>
+            </ul>
+            <div class="text-gray-400 flex flex-col">
+                <div class="inline-block py-2 px-3 text-white uppercase font-medium tracking-wide">Gardons le contact</div>
+                <div class="flex pl-4 justify-start">
+                    <a class="block flex items-center text-white hover:text-gray-500 mr-6 no-underline" href="#"><i
+                            class="fab fa-github-alt"></i></a>
+                    <a class="block flex items-center text-white hover:text-gray-500 mr-6 no-underline" href="#"><i
+                            class="fab fa-slack"></i></a>
+                    <a class="block flex items-center text-white hover:text-gray-500 no-underline" href="#"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-4 mt-4 text-gray-700 border-t border-gray-900 text-center"> ©2019 GRETA. Tous droits réservés.</div>
+
+
+</footer>
+
+
+<script>
+
+    var str = window.location.href;
+    var res = str.split("?");
+    var Ar = [
+        ["default", [43.673399, 7.218199], [43.674402, 7.221408], "GRETA Côte d'Azur", "7 Avenue des Eucalyptus, 06200 Nice", "04 92 29 40 80" ],
+        ["aix", [43.528121, 5.454613], [43.528467, 5.455048], "GRETA Du pays d`Aix", "60 Boulevard Carnot, 13100 Aix-en-Provence", "04 42 21 52 77"],
+        ["marseille", [43.273518, 5.424916], [43.273323, 5.426203], "Greta Marseille Méditerranée", "74 Rue Verdillon, 13010 Marseille", "04 91 96 35 30"],
+        ["montpellier", [43.610573, 3.891972], [43.610981, 3.890910], "GRETA Montpellier-Littoral", "717 Avenue Jean Mermoz, 34060 Montpellier", "04 67 20 36 00"]
+
+    ];
+    if (res[1] === '' || res[1] === undefined) {
+        maps(Ar[0][1],Ar[0][2],Ar[0][3], Ar[0][4] ,Ar[0][5]);
+    }
+    for (let i = 0; i < Ar.length; i++) {
+        if (res[1] === Ar[i][0]) {
+            maps(Ar[i][1],Ar[i][2],Ar[i][3],Ar[i][4],Ar[i][5] );
+        }
+    }
+    /*  Function intMAP */
+    function maps(location, state, nom, adresse, telephone) {
+        var mymap = L.map('mapid').setView(location, 13);
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoiam9hcXVpbmUiLCJhIjoiY2s2cnI2azduMDg1NTNsbXF0c2FrcjdyZCJ9.HDL9DBs1u1Zn--_0WPIC2Q', {
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            maxZoom: 18,
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        }).addTo(mymap);
+        L.marker(state).addTo(mymap)
+            .bindPopup("<b>" + nom + "</b><br>Tel : <b>" + telephone + " </b><br>" + adresse + "").openPopup();
+        var popup = L.popup();
+    }
+</script>
+</body>
+</html>

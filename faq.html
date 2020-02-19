@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/output.css" type="text/css">
+    <link rel="stylesheet" href="https://stitches.hyperyolo.com/output.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" type="text/css">
+
+    <title>Greta</title>
+</head>
+<body class="antialias bg-gray-200">
+<header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2">
+    <div class="flex-1 flex justify-between items-center">
+        <a href="#">
+            <img class="rounded" src="http://fakeimg.pl/32x36/F90/fff/?text=Greta">
+        </a>
+    </div>
+
+    <label for="menu-toggle" class="pointer-cursor lg:hidden block"><svg class="fill-current text-gray-900" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><title>menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path></svg></label>
+    <input class="hidden" type="checkbox" id="menu-toggle" />
+
+    <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+        <nav>
+            <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-400" href="http://localhost/greta/">Accueil</a></li>
+                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-400" href="http://localhost/greta/carte.html">Carte</a></li>
+                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-400" href="http://localhost/greta/formations.html">Nos Formations</a></li>
+                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-400" href="http://localhost/greta/faq.html">FAQ</a></li>
+                <li><a class="lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-red-400 lg:mb-0 mb-2" href="http://localhost/greta/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+<section class="bg-white-100 py-5 font-sans">
+    <!--Container-->
+    <div class="container w-full flex flex-wrap mx-auto px-2 pt-8 lg:pt-16 mt-16">
+        <div class="w-full lg:w-1/5 px-6 text-xl text-gray-800 leading-normal">
+            <p class="text-base font-bold py-2 lg:pb-6 text-gray-700">FAQ</p>
+            <div class="block lg:hidden sticky inset-0">
+                <button id="menu-toggle-faq" class="flex w-full justify-end px-3 py-3 bg-white lg:bg-transparent border rounded border-gray-600 hover:border-orange-600 appearance-none focus:outline-none">
+                    <svg class="fill-current h-3 float-right" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="w-full sticky inset-0 hidden max-h-64 lg:h-auto overflow-x-hidden overflow-y-auto lg:overflow-y-hidden lg:block mt-0 my-2 lg:my-0 border border-gray-400 lg:border-transparent bg-white shadow lg:shadow-none lg:bg-transparent z-20" style="top:6em;" id="menu-content">
+                <ul class="list-reset py-2 md:py-0">
+                    <li class="py-1 md:my-2 hover:bg-orange-100 lg:hover:bg-transparent border-l-4 border-transparent font-bold border-orange-600">
+                        <a href='#section1' class="block pl-4 align-middle text-gray-700 no-underline hover:text-orange-600">
+                            <span class="pb-1 md:pb-0 text-sm">Les formations</span>
+                        </a>
+                    </li>
+                    <li class="py-1 md:my-2 hover:bg-orange-100 lg:hover:bg-transparent border-l-4 border-transparent">
+                        <a href='#section2' class="block pl-4 align-middle text-gray-700 no-underline hover:text-orange-600">
+                            <span class="pb-1 md:pb-0 text-sm">Les financements</span>
+                        </a>
+                    </li>
+                    <li class="py-1 md:my-2 hover:bg-orange-100 lg:hover:bg-transparent border-l-4 border-transparent">
+                        <a href='#section3' class="block pl-4 align-middle text-gray-700 no-underline hover:text-orange-600">
+                            <span class="pb-1 md:pb-0 text-sm">Secteur d'activité</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="w-full lg:w-4/5">
+            <h1 class="flex items-center font-sans font-bold break-normal text-gray-700 px-2 text-xl mt-12 lg:mt-0 md:text-2xl">
+                Des questions ? Parcourrez notre FAQ
+            </h1>
+            <hr class="bg-gray-300 my-12">
+            <h2 id='section1' class="font-sans font-bold break-normal text-gray-700 px-2 pb-8 text-xl">Les formations</h2>
+            <div class="p-8 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
+                <li>Red alert.</li>
+                <li>Pestilence, life, and courage.</li>
+            </div>
+            <hr class="bg-gray-300 my-12">
+            <h2 class="font-sans font-bold break-normal text-gray-700 px-2 pb-8 text-xl">Les financements</h2>
+            <div id='section2' class="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
+                <li>Red alert.</li>
+                <li>Pestilence, life, and courage.</li>
+                <li>Fortis hydra semper visums repressor est.</li>
+            </div>
+            <hr class="bg-gray-300 my-12">
+            <h2 class="font-sans font-bold break-normal text-gray-700 px-2 pb-8 text-xl">Secteur d'activité</h2>
+            <div id='section3' class="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
+                <li>Red alert.</li>
+                <li>Pestilence, life, and courage.</li>
+                <li>Fortis hydra semper visums repressor est.</li>
+                <li>Per guest prepare eight oz of sour milk with mashed lettuce for dessert.</li>
+            </div>
+        </section>
+        <div class="w-full lg:w-4/5 lg:ml-auto text-base md:text-sm text-gray-600 px-4 py-24 mb-12">
+            <span class="text-base text-orange-600 font-bold">&lt;</span> <a href="#" class="text-base md:text-sm text-orange-600 font-bold no-underline hover:underline">Retour en arrière</a>
+        </div>
+
+    </div>
+    <!--/container-->
+</section>
+<footer class="font-sans bg-black text-white py-8 px-4">
+    <div class="mx-auto container overflow-hidden flex flex-col lg:flex-row justify-between">
+        <a href="/" class="block mr-4 w-1/2">
+            <img class="rounded-full" src="http://fakeimg.pl/50x50/DA5930/fff/?text=GRETA"  alt="logo">
+        </a>
+        <div class="flex text-sm mt-6 lg:mt-0">
+            <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left">
+                <li class="inline-block py-2 px-3 text-white uppercase no-underline font-medium tracking-wide">Localisation</li>
+                <li><a href="http://localhost/greta/carte.html"  target="_top" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Greta Côte d'azur</a></li>
+                <li><a href="http://localhost/greta/carte.html?aix"  target="_top" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Greta Aix</a></li>
+                <li><a href="http://localhost/greta/carte.html?marseille" target="_top" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Greta Marseille</a></li>
+                <li><a href="http://localhost/greta/carte.html?montpellier" target="_top" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Greta Montpellier</a></li>
+            </ul>
+            <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left">
+                <li class="inline-block py-2 px-3 text-white uppercase no-underline font-medium tracking-wide">Le réseau</li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Greta du ver</a></li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Greta Côte d'Azur</a></li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Greta Tourisme Hôtellerie</a></li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">GIP FIPAN</a></li>
+            </ul>
+            <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left">
+                <li class="inline-block py-2 px-3 text-white uppercase no-underline font-medium tracking-wide">Pour le particulier</li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Formations</a>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Bilan de compétences</a>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Validation des acquis de l'expérience</a>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Préparation concours</a></li>
+            </ul>
+            <ul class="text-gray-700 list-none p-0 font-thin flex flex-col text-left">
+                <li class="inline-block py-2 px-3 text-white uppercase no-underline font-medium tracking-wide">Pour l'entreprise</li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Formations Management RH</a></li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Conseil RH</a></li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Bilan de compétences</a></li>
+                <li><a href="#" class="inline-block py-2 px-3 text-gray-500 hover:text-gray-500-light no-underline">Validation des acquis de l'expérience</a>
+                </li>
+            </ul>
+            <div class="text-gray-400 flex flex-col">
+                <div class="inline-block py-2 px-3 text-white uppercase font-medium tracking-wide">Gardons le contact</div>
+                <div class="flex pl-4 justify-start">
+                    <a class="block flex items-center text-white hover:text-gray-500 mr-6 no-underline" href="#"><i
+                            class="fab fa-github-alt"></i></a>
+                    <a class="block flex items-center text-white hover:text-gray-500 mr-6 no-underline" href="#"><i
+                            class="fab fa-slack"></i></a>
+                    <a class="block flex items-center text-white hover:text-gray-500 no-underline" href="#"><i
+                            class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-4 mt-4 text-gray-700 border-t border-gray-900 text-center"> ©2019 GRETA. Tous droits réservés.</div>
+
+
+</footer>
+
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"></script>
+<script src="js/main.js"></script>
+<script>
+
+    var helpMenuDiv = document.getElementById("menu-content");
+    var helpMenu = document.getElementById("menu-toggle-faq");
+
+    document.onclick = check;
+
+    function check(e){
+        var target = (e && e.target) || (event && event.srcElement);
+
+        //Help Menu
+        if (!checkParent(target, helpMenuDiv)) {
+            // click NOT on the menu
+            if (checkParent(target, helpMenu)) {
+                // click on the link
+                if (helpMenuDiv.classList.contains("hidden")) {
+                    helpMenuDiv.classList.remove("hidden");
+                } else {helpMenuDiv.classList.add("hidden");}
+            } else {
+                // click both outside link and outside menu, hide menu
+                helpMenuDiv.classList.add("hidden");
+            }
+        }
+
+    }
+    function checkParent(t, elm) {
+        while(t.parentNode) {
+            if( t == elm ) {return true;}
+            t = t.parentNode;
+        }
+        return false;
+    }
+
+</script>
+
+<!-- jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+<!-- Scroll Spy -->
+<script>
+
+
+    var lastId,
+        topMenu = $("#menu-content"),
+        topMenuHeight = topMenu.outerHeight()+175,
+        // All list items
+        menuItems = topMenu.find("a"),
+        // Anchors corresponding to menu items
+        scrollItems = menuItems.map(function(){
+            var item = $($(this).attr("href"));
+            if (item.length) { return item; }
+        });
+
+    menuItems.click(function(e){
+        var href = $(this).attr("href"),
+            offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+1;
+        $('html, body').stop().animate({
+            scrollTop: offsetTop
+        }, 300);
+        if (!helpMenuDiv.classList.contains("hidden")) {
+            helpMenuDiv.classList.add("hidden");
+        }
+        e.preventDefault();
+    });
+
+
+    $(window).scroll(function(){
+
+        var fromTop = $(this).scrollTop()+topMenuHeight;
+        var cur = scrollItems.map(function(){
+            if ($(this).offset().top < fromTop)
+                return this;
+        });
+        cur = cur[cur.length-1];
+        var id = cur && cur.length ? cur[0].id : "";
+
+        if (lastId !== id) {
+            lastId = id;
+            menuItems
+                .parent().removeClass("font-bold border-orange-600")
+                .end().filter("[href='#"+id+"']").parent().addClass("font-bold border-orange-600");
+        }
+    });
+
+</script>
+
+</body>
+</html>
